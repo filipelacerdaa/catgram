@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/index.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/insta.ico') }}">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Satisfy&display=swap");
+    </style>
+
+    <title>Catgram</title>
+</head>
+<body>
+    <header>
+        <h1>Catgram</h1>
+        <h2>Seu local <b>definitivo</b> de memes de gatinhos</h2>
+        <h3>Curadoria por <b>Lolo banguela</b></h3>
+    </header>
+    <div class="container">
+        {%for line in lines%}
+            <div class="content">
+                <blockquote class="instagram-media" data-instgrm-permalink="{{ line }}" data-instgrm-version="14"></blockquote>
+            </div>
+        {%endfor%}
+    </div>
+    <footer>
+        <span>Feito com &#128420; por mipaum</span>
+    </footer>
+
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>

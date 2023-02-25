@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    align-items: center;
+    background: #a7b9c7;
+    background: -webkit-linear-gradient(to bottom, #eef2f3, #a7b9c7);
+    background: linear-gradient(to bottom, #eef2f3, #a7b9c7);
+}
+
+header {
+    justify-content: center;
+    width: 100%;
+}
+
+header h1 {
+    background: linear-gradient(30deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    display: block;
+    font-family: "Satisfy", cursive;
+    font-size: 54px;
+    margin: 40px auto 40px auto;
+    width: fit-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header h2, header h3 {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+header h2 b, header h3 b {
+    font-weight: 400;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+header h3 {
+    font-size: 18px;
+    margin: 10px auto 40px auto;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.content {
+    margin: 10px;
+}
+
+footer {
+    justify-content: center;
+    width: 100%;
+}
+
+footer span {
+    background-color: #00000030;
+    border-radius: 50px;
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 4px auto 20px auto;
+    padding: 6px 20px 8px 20px;
+    width: fit-content;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b6b6b6;
+    border-radius: 4px;
+}
+
